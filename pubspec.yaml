@@ -1,0 +1,55 @@
+name: rover_companion
+description: AI Rover Companion App - The brain of your robot.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.1
+  
+  # HTTP & networking
+  http: ^1.2.0
+  
+  # Camera / video streaming
+  flutter_vlc_player: ^7.4.1
+  
+  # Face / object detection (Google ML Kit)
+  google_mlkit_face_detection: ^0.10.0
+  google_mlkit_object_detection: ^0.13.0
+  
+  # Camera access for ML pipeline
+  camera: ^0.10.5+9
+  
+  # Voice / speech
+  speech_to_text: ^7.3.0
+  flutter_tts: ^3.8.5
+  
+  # Animations
+  lottie: ^2.7.0
+  animated_text_kit: ^4.2.2
+  
+  # Utilities
+  shared_preferences: ^2.2.2
+  rxdart: ^0.27.7
+  collection: ^1.18.0
+  
+  # UI
+  cupertino_icons: ^1.0.6
+  flutter_joystick: ^0.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
